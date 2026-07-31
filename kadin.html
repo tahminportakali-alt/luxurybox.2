@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gözlük & Saat - LUXURY BOX</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">LUXURY BOX</a>
+            <div class="navbar-links">
+                <a href="index.html">Ana Sayfa</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Kategoriler <i class="fas fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="kadin.html">Ayakkabılar</a>
+                        <a href="erkek.html">Gözlük & Saat</a>
+                        <a href="cocuk.html">Çantalar</a>
+                    </div>
+                </div>
+                <a href="about.html">Hakkımızda</a>
+                <a href="contact.html">İletişim</a>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+                <!-- ✅ ADMIN BUTONU EKLENDI -->
+                <a href="admin.html" class="admin-btn-nav">
+                    <i class="fas fa-user-shield"></i> Admin
+                </a>
+            </div>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Gözlük & Saat Koleksiyonu</h1>
+            <p>PRADA, Gentle Monster, Rolex, Cartier ve daha fazlası...</p>
+        </div>
+    </section>
+
+    <!-- ========== PRODUCTS ========== -->
+    <section class="products">
+        <div class="container">
+            <div class="products-grid" id="productGrid">
+                <!-- ====== STATİK ÜRÜNLER (HTML'de yazılı) ====== -->
+                
+                <!-- Sıra 1 - Gözlükler -->
+                <div class="product-card">
+                    <img src="css/foto/2.jpeg" alt="PRADA Gözlük" />
+                    <h3>PRADA SPR 60W</h3>
+                    <p class="price">12,500 TL</p>
+                    <button class="add-to-cart" data-id="101" data-name="PRADA SPR 60W" data-price="12500" data-image="css/foto/2.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/4.jpeg" alt="Gentle Monster" />
+                    <h3>Gentle Monster Momati</h3>
+                    <p class="price">8,900 TL</p>
+                    <button class="add-to-cart" data-id="102" data-name="Gentle Monster Momati" data-price="8900" data-image="css/foto/4.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/7.jpeg" alt="Dior Gözlük" />
+                    <h3>Dior Black Tie</h3>
+                    <p class="price">11,900 TL</p>
+                    <button class="add-to-cart" data-id="103" data-name="Dior Black Tie" data-price="11900" data-image="css/foto/7.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+
+                <!-- Sıra 2 - Saatler -->
+                <div class="product-card">
+                    <img src="css/foto/2f91c24f-50ae-4b00-bfa9-7b83bc2660cc.jpeg" alt="Rolex" />
+                    <h3>Rolex Daytona</h3>
+                    <p class="price">185,000 TL</p>
+                    <button class="add-to-cart" data-id="104" data-name="Rolex Daytona" data-price="185000" data-image="css/foto/2f91c24f-50ae-4b00-bfa9-7b83bc2660cc.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/6.jpeg" alt="Cartier" />
+                    <h3>Cartier Tank</h3>
+                    <p class="price">95,000 TL</p>
+                    <button class="add-to-cart" data-id="105" data-name="Cartier Tank" data-price="95000" data-image="css/foto/6.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/4.jpeg" alt="Omega" />
+                    <h3>Omega Speedmaster</h3>
+                    <p class="price">78,000 TL</p>
+                    <button class="add-to-cart" data-id="106" data-name="Omega Speedmaster" data-price="78000" data-image="css/foto/4.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+
+                <!-- Sıra 3 - Gözlükler -->
+                <div class="product-card">
+                    <img src="css/foto/11.jpeg" alt="Gucci Gözlük" />
+                    <h3>Gucci GG Gözlük</h3>
+                    <p class="price">9,900 TL</p>
+                    <button class="add-to-cart" data-id="107" data-name="Gucci GG Gözlük" data-price="9900" data-image="css/foto/11.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/12.jpeg" alt="Saint Laurent Gözlük" />
+                    <h3>Saint Laurent SL 276</h3>
+                    <p class="price">10,500 TL</p>
+                    <button class="add-to-cart" data-id="108" data-name="Saint Laurent SL 276" data-price="10500" data-image="css/foto/12.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/13.jpeg" alt="Prada Gözlük" />
+                    <h3>Prada PR 19WS</h3>
+                    <p class="price">11,500 TL</p>
+                    <button class="add-to-cart" data-id="109" data-name="Prada PR 19WS" data-price="11500" data-image="css/foto/13.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+
+                <!-- Sıra 4 - Saatler -->
+                <div class="product-card">
+                    <img src="css/foto/14.jpeg" alt="Patek Philippe" />
+                    <h3>Patek Philippe Nautilus</h3>
+                    <p class="price">220,000 TL</p>
+                    <button class="add-to-cart" data-id="110" data-name="Patek Philippe Nautilus" data-price="220000" data-image="css/foto/14.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/u4y5.jpeg" alt="Audemars Piguet" />
+                    <h3>Audemars Piguet Royal Oak</h3>
+                    <p class="price">195,000 TL</p>
+                    <button class="add-to-cart" data-id="111" data-name="Audemars Piguet Royal Oak" data-price="195000" data-image="css/foto/u4y5.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/hhhhhhhh.jpeg" alt="TAG Heuer" />
+                    <h3>TAG Heuer Carrera</h3>
+                    <p class="price">52,000 TL</p>
+                    <button class="add-to-cart" data-id="112" data-name="TAG Heuer Carrera" data-price="52000" data-image="css/foto/hhhhhhhh.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+
+                <!-- Sıra 5 - Gözlükler -->
+                <div class="product-card">
+                    <img src="css/foto/2f91c24f-50ae-4b00-bfa9-7b83bc2660cc.jpeg" alt="Fendi Gözlük" />
+                    <h3>Fendi FF Gözlük</h3>
+                    <p class="price">9,500 TL</p>
+                    <button class="add-to-cart" data-id="113" data-name="Fendi FF Gözlük" data-price="9500" data-image="css/foto/2f91c24f-50ae-4b00-bfa9-7b83bc2660cc.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/6.jpeg" alt="Chanel Gözlük" />
+                    <h3>Chanel 4172 Gözlük</h3>
+                    <p class="price">13,500 TL</p>
+                    <button class="add-to-cart" data-id="114" data-name="Chanel 4172 Gözlük" data-price="13500" data-image="css/foto/6.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/4.jpeg" alt="Tom Ford Gözlük" />
+                    <h3>Tom Ford FT 5269</h3>
+                    <p class="price">8,500 TL</p>
+                    <button class="add-to-cart" data-id="115" data-name="Tom Ford FT 5269" data-price="8500" data-image="css/foto/4.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+
+                <!-- Sıra 6 - Saatler -->
+                <div class="product-card">
+                    <img src="css/foto/2.jpeg" alt="IWC Schaffhausen" />
+                    <h3>IWC Portugieser</h3>
+                    <p class="price">68,000 TL</p>
+                    <button class="add-to-cart" data-id="116" data-name="IWC Portugieser" data-price="68000" data-image="css/foto/2.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/7.jpeg" alt="Breitling" />
+                    <h3>Breitling Navitimer</h3>
+                    <p class="price">62,000 TL</p>
+                    <button class="add-to-cart" data-id="117" data-name="Breitling Navitimer" data-price="62000" data-image="css/foto/7.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/13.jpeg" alt="Panerai" />
+                    <h3>Panerai Luminor</h3>
+                    <p class="price">58,000 TL</p>
+                    <button class="add-to-cart" data-id="118" data-name="Panerai Luminor" data-price="58000" data-image="css/foto/13.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+
+                <!-- ====== DİNAMİK ÜRÜNLER (Admin'den eklenenler buraya gelecek) ====== -->
+                <!-- JavaScript ile buraya eklenecek -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHATSAPP SABİT BUTON ========== -->
+    <a href="https://wa.me/905439704241?text=Merhaba%2C%20LUXURY%20BOX%20ile%20ilgileniyorum." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LUXURY BOX</h3>
+                    <p>Kişisel alışveriş ve lüks marka danışmanlığı.<br />Instagram: @luxurybox.tm</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hızlı Linkler</h3>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="kadin.html">Ayakkabılar</a></li>
+                        <li><a href="erkek.html">Gözlük & Saat</a></li>
+                        <li><a href="cocuk.html">Çantalar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>İletişim</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+905439704241">+90 543 970 42 41</a></p>
+                    <p><i class="fas fa-envelope"></i> info@luxurybox.com</p>
+                    <p><i class="fab fa-whatsapp" style="color:#25d366;"></i> <a href="https://wa.me/905439704241" target="_blank">WhatsApp'tan Yaz</a></p>
+                    <p><i class="fab fa-instagram" style="color:#E4405F;"></i> <a href="https://instagram.com/luxurybox.tm" target="_blank">@luxurybox.tm</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Sosyal Medya</h3>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/luxurybox.tm" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/905439704241" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LUXURY BOX | @luxurybox.tm</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ✅ SADECE BURASI DEĞİŞTİ: Supabase kütüphanesi eklendi -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

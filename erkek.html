@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lüks Çantalar - LUXURY BOX</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">LUXURY BOX</a>
+            <div class="navbar-links">
+                <a href="index.html">Ana Sayfa</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Kategoriler <i class="fas fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="kadin.html">Ayakkabılar</a>
+                        <a href="erkek.html">Gözlük & Saat</a>
+                        <a href="cocuk.html">Çantalar</a>
+                    </div>
+                </div>
+                <a href="about.html">Hakkımızda</a>
+                <a href="contact.html">İletişim</a>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+                <!-- ✅ ADMIN BUTONU EKLENDI -->
+                <a href="admin.html" class="admin-btn-nav">
+                    <i class="fas fa-user-shield"></i> Admin
+                </a>
+            </div>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Lüks Çanta Koleksiyonu</h1>
+            <p>Hermès, Chanel, Gucci, Prada ve daha fazlası...</p>
+        </div>
+    </section>
+
+    <!-- ========== PRODUCTS ========== -->
+    <section class="products">
+        <div class="container">
+            <div class="products-grid" id="productGrid">
+                <!-- ====== STATİK ÜRÜNLER (HTML'de yazılı) ====== -->
+                
+                <!-- Sıra 1 -->
+                <div class="product-card">
+                    <img src="css/foto/2f91c24f-50ae-4b00-bfa9-7b83bc2660cc.jpeg" alt="Hermès Kelly" />
+                    <h3>Hermès Kelly Bag</h3>
+                    <p class="price">52,000 TL</p>
+                    <button class="add-to-cart" data-id="301" data-name="Hermès Kelly Bag" data-price="52000" data-image="css/foto/2f91c24f-50ae-4b00-bfa9-7b83bc2660cc.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/6.jpeg" alt="Chanel Classic Flap" />
+                    <h3>Chanel Classic Flap Bag</h3>
+                    <p class="price">45,000 TL</p>
+                    <button class="add-to-cart" data-id="302" data-name="Chanel Classic Flap Bag" data-price="45000" data-image="css/foto/6.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/4.jpeg" alt="Gucci GG Marmont" />
+                    <h3>Gucci GG Marmont</h3>
+                    <p class="price">32,500 TL</p>
+                    <button class="add-to-cart" data-id="303" data-name="Gucci GG Marmont" data-price="32500" data-image="css/foto/4.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+
+                <!-- Sıra 2 -->
+                <div class="product-card">
+                    <img src="css/foto/7.jpeg" alt="Prada Re-Edition" />
+                    <h3>Prada Re-Edition</h3>
+                    <p class="price">28,900 TL</p>
+                    <button class="add-to-cart" data-id="304" data-name="Prada Re-Edition" data-price="28900" data-image="css/foto/7.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/11.jpeg" alt="Dior Saddle" />
+                    <h3>Dior Saddle Bag</h3>
+                    <p class="price">31,500 TL</p>
+                    <button class="add-to-cart" data-id="305" data-name="Dior Saddle Bag" data-price="31500" data-image="css/foto/11.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/12.jpeg" alt="Louis Vuitton Speedy" />
+                    <h3>Louis Vuitton Speedy</h3>
+                    <p class="price">26,900 TL</p>
+                    <button class="add-to-cart" data-id="306" data-name="Louis Vuitton Speedy" data-price="26900" data-image="css/foto/12.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+
+                <!-- Sıra 3 -->
+                <div class="product-card">
+                    <img src="css/foto/13.jpeg" alt="Fendi Baguette" />
+                    <h3>Fendi Baguette</h3>
+                    <p class="price">24,500 TL</p>
+                    <button class="add-to-cart" data-id="307" data-name="Fendi Baguette" data-price="24500" data-image="css/foto/13.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/14.jpeg" alt="Celine Triomphe" />
+                    <h3>Celine Triomphe Bag</h3>
+                    <p class="price">29,900 TL</p>
+                    <button class="add-to-cart" data-id="308" data-name="Celine Triomphe Bag" data-price="29900" data-image="css/foto/14.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/2.jpeg" alt="Bottega Veneta" />
+                    <h3>Bottega Veneta Cassette</h3>
+                    <p class="price">27,500 TL</p>
+                    <button class="add-to-cart" data-id="309" data-name="Bottega Veneta Cassette" data-price="27500" data-image="css/foto/2.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+
+                <!-- Sıra 4 -->
+                <div class="product-card">
+                    <img src="css/foto/u4y5.jpeg" alt="Goyard St Louis" />
+                    <h3>Goyard St Louis Tote</h3>
+                    <p class="price">23,900 TL</p>
+                    <button class="add-to-cart" data-id="310" data-name="Goyard St Louis Tote" data-price="23900" data-image="css/foto/u4y5.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/hhhhhhhh.jpeg" alt="Balenciaga Hourglass" />
+                    <h3>Balenciaga Hourglass</h3>
+                    <p class="price">19,900 TL</p>
+                    <button class="add-to-cart" data-id="311" data-name="Balenciaga Hourglass" data-price="19900" data-image="css/foto/hhhhhhhh.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/2f91c24f-50ae-4b00-bfa9-7b83bc2660cc.jpeg" alt="YSL Sac De Jour" />
+                    <h3>YSL Sac De Jour</h3>
+                    <p class="price">28,500 TL</p>
+                    <button class="add-to-cart" data-id="312" data-name="YSL Sac De Jour" data-price="28500" data-image="css/foto/2f91c24f-50ae-4b00-bfa9-7b83bc2660cc.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+
+                <!-- Sıra 5 -->
+                <div class="product-card">
+                    <img src="css/foto/6.jpeg" alt="Loewe Puzzle" />
+                    <h3>Loewe Puzzle Bag</h3>
+                    <p class="price">26,500 TL</p>
+                    <button class="add-to-cart" data-id="313" data-name="Loewe Puzzle Bag" data-price="26500" data-image="css/foto/6.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/4.jpeg" alt="Miu Miu Wander" />
+                    <h3>Miu Miu Wander Bag</h3>
+                    <p class="price">19,500 TL</p>
+                    <button class="add-to-cart" data-id="314" data-name="Miu Miu Wander Bag" data-price="19500" data-image="css/foto/4.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/7.jpeg" alt="Valentino Garavani" />
+                    <h3>Valentino Garavani Bag</h3>
+                    <p class="price">22,900 TL</p>
+                    <button class="add-to-cart" data-id="315" data-name="Valentino Garavani Bag" data-price="22900" data-image="css/foto/7.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+
+                <!-- Sıra 6 -->
+                <div class="product-card">
+                    <img src="css/foto/11.jpeg" alt="Burberry TB" />
+                    <h3>Burberry TB Bag</h3>
+                    <p class="price">21,500 TL</p>
+                    <button class="add-to-cart" data-id="316" data-name="Burberry TB Bag" data-price="21500" data-image="css/foto/11.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/12.jpeg" alt="Givenchy Antigona" />
+                    <h3>Givenchy Antigona</h3>
+                    <p class="price">24,900 TL</p>
+                    <button class="add-to-cart" data-id="317" data-name="Givenchy Antigona" data-price="24900" data-image="css/foto/12.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="css/foto/13.jpeg" alt="Chloé Woody" />
+                    <h3>Chloé Woody Tote</h3>
+                    <p class="price">17,900 TL</p>
+                    <button class="add-to-cart" data-id="318" data-name="Chloé Woody Tote" data-price="17900" data-image="css/foto/13.jpeg">
+                        <i class="fas fa-plus"></i> Sepete Ekle
+                    </button>
+                </div>
+
+                <!-- ====== DİNAMİK ÜRÜNLER (Admin'den eklenenler buraya gelecek) ====== -->
+                <!-- JavaScript ile buraya eklenecek -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHATSAPP SABİT BUTON ========== -->
+    <a href="https://wa.me/905439704241?text=Merhaba%2C%20LUXURY%20BOX%20ile%20ilgileniyorum." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LUXURY BOX</h3>
+                    <p>Kişisel alışveriş ve lüks marka danışmanlığı.<br />Instagram: @luxurybox.tm</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hızlı Linkler</h3>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="kadin.html">Ayakkabılar</a></li>
+                        <li><a href="erkek.html">Gözlük & Saat</a></li>
+                        <li><a href="cocuk.html">Çantalar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>İletişim</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+905439704241">+90 543 970 42 41</a></p>
+                    <p><i class="fas fa-envelope"></i> info@luxurybox.com</p>
+                    <p><i class="fab fa-whatsapp" style="color:#25d366;"></i> <a href="https://wa.me/905439704241" target="_blank">WhatsApp'tan Yaz</a></p>
+                    <p><i class="fab fa-instagram" style="color:#E4405F;"></i> <a href="https://instagram.com/luxurybox.tm" target="_blank">@luxurybox.tm</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Sosyal Medya</h3>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/luxurybox.tm" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/905439704241" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LUXURY BOX | @luxurybox.tm</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ✅ SADECE BURASI DEĞİŞTİ: Supabase kütüphanesi eklendi -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
